@@ -1,0 +1,23 @@
+// Remove WordPress Core DNS Prefetch
+
+remove_action( 'wp_head', 'wp_resource_hints', 2 );
+
+function remove_dns_prefetch( $hints, $relation_type ) {
+    if ( 'dns-prefetch' === $relation_type ) {
+        return array_diff( wp_dependencies_unique_hosts(), $hints );
+    }
+    return $hints;
+}
+
+add_filter( 'wp_resource_hints', 'remove_dns_prefetch', 10, 2 );
+
+
+// Add Custom DNS Prefetch Domains
+
+function add_dns_prefetch() {
+  echo '<meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="//domain1.com" />
+    <link rel="dns-prefetch" href="//domain2.com" />
+    <link rel="dns-prefetch" href="//domain3.com" />
+';}
+add_action( 'wp_head', 'add_dns_prefetch', 0 );
