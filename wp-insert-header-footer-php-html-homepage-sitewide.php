@@ -1,3 +1,7 @@
+<?php
+/********* DO NOT COPY THE PARTS ABOVE THIS LINE *********/
+
+
 // ADD CODE TO HEAD - HOMEPAGE ----------------------------------------------------- //
 function addto_wphead_homepage() {
 if ( is_front_page() ) {
