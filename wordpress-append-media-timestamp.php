@@ -1,3 +1,6 @@
+<?php
+/********* DO NOT COPY THE PARTS ABOVE THIS LINE *********/
+
 /*
 Append Media Timestamp
 source: https://wp-mix.com/rename-uploaded-files-wordpress/
