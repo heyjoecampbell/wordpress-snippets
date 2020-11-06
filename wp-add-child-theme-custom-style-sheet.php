@@ -1,3 +1,6 @@
+<?php
+/********* DO NOT COPY THE PARTS ABOVE THIS LINE *********/
+
 // Add Child Theme Custom Style Sheet
 
 function custom_child_style_sheet() {
