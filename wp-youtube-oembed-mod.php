@@ -1,3 +1,6 @@
+<?php
+/********* DO NOT COPY THE PARTS ABOVE THIS LINE *********/
+
 // YouTube oEmbed Mod - disable related, disable showinfo, apply wmode opaque
 
 function youtube_oembed_mod($html, $url, $attr) {
