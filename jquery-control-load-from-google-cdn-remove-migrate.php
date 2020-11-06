@@ -1,3 +1,5 @@
+<?php
+/********* DO NOT COPY THE PARTS ABOVE THIS LINE *********/
 
 // Load jQuery from Google Library
 
