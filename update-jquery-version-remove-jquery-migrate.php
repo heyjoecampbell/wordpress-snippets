@@ -5,7 +5,6 @@
 Replace jQuery Library
 source: https://www.wpbeginner.com/wp-themes/replace-default-wordpress-jquery-script-with-google-library/
 */
-
 function modify_jquery() {
     if (!is_admin()) {
         // comment out the next two lines to load the local copy of jQuery
